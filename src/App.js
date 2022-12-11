@@ -1,15 +1,18 @@
 import logo from './logo.svg';
 import { Homepage } from './page/Homepage';
+import { Location } from './component/Location';
+import { Pokemon } from './component/Pokemon'
 import './App.css';
 import {Routes,Route} from "react-router-dom"
 
 function App() {
   const MyRouter = () => {
     return (
-      <div className="App">
+      <div>
       <Routes>
         <Route path="/" element={<Homepage/>} />
-        <Route path="about" element={<div>About</div>} />
+        <Route path="/location" element={<Location />}/>
+        <Route path="/location/:id" element={<Pokemon/>}/>
       </Routes>
     </div>)
 }
