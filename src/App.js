@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import { Homepage } from './page/Homepage';
 import { Login } from './page/Login'
 import { Location } from './component/Location';
