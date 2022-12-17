@@ -4,7 +4,7 @@ const NamePokemon =({Name}) =>{
 
 const Img =({url}) =>{
     return (<div>
-        <img src={url} className="my-4 mx-auto h-32"></img>
+        <img alt={url} className="my-4 mx-auto h-32"></img>
     </div>)
 }
 
