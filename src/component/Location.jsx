@@ -1,8 +1,5 @@
-import { Chosen } from "./Chosen";
 import { List } from "./PokemonList";
-import {NamePokemon, Img, Button, ListPokemon, ContainerList, LuckyOne} from "./Other";
 import { useEffect, useState } from "react";
-import {Routes,Route} from "react-router-dom"
 import { Link } from "react-router-dom";
 
 export const Location = ()=>{
