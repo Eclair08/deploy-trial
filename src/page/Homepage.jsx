@@ -7,7 +7,7 @@ export const Homepage = ()=>{
     const [nama, setNama]=useState("Pidgey")
     const [img, setImg]=useState("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/16.svg")
     const [data, setData]=useState([])
-
+    console.log("testing firebase");
     const getData = async ()=>{
         
         const req=await fetch("https://pokeapi.co/api/v2/pokemon")
