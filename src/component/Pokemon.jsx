@@ -25,7 +25,7 @@ export const Pokemon = ()=>{
         setData (await Promise.all(list))
     }
     useEffect (()=>{
-        getData()
+        getData(id)
     }, [id])
 
     const mapPoke=data.map(el=>{

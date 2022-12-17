@@ -44,7 +44,7 @@ import { NamePokemon, ContainerList, Img } from "../component/Other"
 
     useEffect(() => {
         dmg(winner)
-    },[winner, turn])
+    },[winner])
 
     useEffect(() => {
         if (hp1 === 0) {
