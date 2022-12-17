@@ -26,7 +26,7 @@ export const Pokemon = ()=>{
     }
     useEffect (()=>{
         getData()
-    }, [])
+    }, [id])
 
     const mapPoke=data.map(el=>{
         return {
