@@ -19,10 +19,6 @@ export const Location = ()=>{
     useEffect (()=>{
         getData()
     }, [])
-    
-    data.map(el => {
-        console.log(el)
-    })
 
     return (
     <>
