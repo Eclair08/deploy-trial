@@ -2,7 +2,6 @@ import { Chosen } from "../component/Chosen";
 import { List } from "../component/PokemonList";
 import {NamePokemon, Img, Button, ListPokemon, ContainerList, LuckyOne} from "../component/Other";
 import { useEffect, useState } from "react";
-import {Routes,Route} from "react-router-dom"
 
 export const Homepage = ()=>{
     const [nama, setNama]=useState("Pidgey")
