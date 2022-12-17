@@ -2,13 +2,15 @@ import { Chosen } from "./Chosen";
 import { List } from "./PokemonList";
 import {NamePokemon, Img, Button, ListPokemon, ContainerList, LuckyOne} from "./Other";
 import { useEffect, useState } from "react";
-import {useParams} from "react-router-dom"
+import {useParams,useNavigate} from "react-router-dom"
+
 
 export const Pokemon = ()=>{
     const {id} = useParams()
     const [nama, setNama]=useState("Pidgey")
     const [img, setImg]=useState("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/16.svg")
     const [data, setData]=useState([])
+    const navigate=useNavigate()
 
     const getData = async ()=>{
         const req=await fetch(`https://pokeapi.co/api/v2/location-area/${id}`)
@@ -36,6 +38,12 @@ export const Pokemon = ()=>{
     const handleClick=(nama,img )=>{
         setImg (img)
         setNama (nama)
+        const pokemon={
+            nama:nama, 
+            image:img
+        }
+        localStorage.setItem('mob',JSON.stringify(pokemon));
+        navigate('/fight')
     }
     
     return (

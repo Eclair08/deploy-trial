@@ -35,6 +35,13 @@ export const Homepage = ()=>{
     const handleClick=(nama,img )=>{
         setImg (img)
         setNama (nama)
+        const pokemon={
+            nama:nama, 
+            image:img
+        }
+        localStorage.setItem('mainPokemon',JSON.stringify(pokemon));
+        // const imgurl = localStorage.getItem(img);
+        // const namepoke = localStorage.getItem(nama);
     }
     
     return (
